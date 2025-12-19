@@ -19,9 +19,9 @@ schema = StructType([
 
 # COMMAND ----------
 
-df = ([(1,),(2,)])              # ✅ data is fine (list of tuples)
-schema = "id string"            # ❌ should be "id STRING"
-df = spark.createDataFrame(df,schema)  # ❌ should be createDataFrame (capital F)
+df = ([(1,),(2,)])             
+schema = "id string"            
+df = spark.createDataFrame(df,schema)  
 
 
 # COMMAND ----------
